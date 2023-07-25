@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-box{
+    box-shadow: 0px 5px 20px rgb(136 44 152);
+    margin-top: 200px;
+    box-sizing: border-box;
+    position: relative;
+
+}
+.main-box::after{
+    position: absolute;
+    content:"";
+    width: 570px;
+    height: 30px;
+    background-color: #7567fd;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+.main-box::before{
+    position: absolute;
+    content:"";
+    width: 50px;
+    height: 607px;
+    background-color: #7567fd;
+    top: -30;
+    left:-50;
+    margin: auto;
+    z-index: 1;
+}
+.main-box1::after{
+    position: absolute;
+    content:"";
+    width: 570px;
+    height: 30px;
+    background-color: #7567fd;
+    top: -30;
+    margin: auto;
+    z-index: 1;
+}
+.main-box1::before{
+    position: absolute;
+    content:"";
+    width: 50px;
+    height: 607px;
+    background-color: #7567fd;
+    bottom : -30;
+    right:-50;
+    margin: auto;
+    z-index: 1;
+}
+
+.w-501{
+    width: 50%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.809);   
+}
+.w-50{
+    width: 50%;
+    padding: 15px;   
+}
+
+img{
+    width: 100%;
+}
+.content{
+    padding: 80px 70px;
+}
+.content h1{
+    font-size: 30px;
+    margin-bottom: 25px;
+    position: relative;
+
+}
+.content h1::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: #7567fd;
+    bottom:-5;
+    left: 0;   
+}
+.content p{
+    font-size: 20px; 
+    padding:15px 0px;
+
+}
+.content p input{
+    width: auto;
+    margin-right: 10px;
+}    
+.content input{
+   width: 100%; 
+   font-size: 20px;
+   padding:10px 60px;
+   border: none;
+   border-bottom: 5px solid #7567fd ;
+}
+
+.content input::placeholder{
+    color: black;
+    padding:10px;    
+}
+.user{
+    position: relative;   
+}
+.user i{
+    position: absolute;
+    content: "";
+    bottom: 20;
+    left: 5;
+}
+button{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    background-color:#7567fd;
+    border:none;
+    border-radius: 20px;   
+}
+.login {
+    margin-top: 50px;
+}
+
+b{
+    font-size: 20px;
+    padding:110px;
+}
+.fa-brands{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(41, 37, 37);
+    text-align: center;
+    border-radius: 100%;
+    color: white;
+    margin: 0px 5px;
+    font-size: 25px;
+
+    
+} 
+.fa-facebook-f,.fa-twitter,.fa-instagram{
+    padding-top:8px;
+    margin-top: 5px;
+    
+}
+.fa-facebook-f:hover{
+    background-color: #395eae ;
+}
+.fa-twitter:hover{
+    background-color: #00acee ;
+}
+.fa-instagram:hover{
+    background-color:#E4405F ;
+}
+.justify{
+    justify-content: center;
+}
+.justify-between{
+    justify-content:space-between;
+}
+
+.submit input{
+    background-color: #7567fd;
+}
+.right{
+    position: fixed;
+    top:30px;
+    right:20px;
+    transition: all 0.5s;
+    transform: translateX(calc(100% + 20px));
+}
+.right.active{
+    transform: translateX(0);
+}
+.right .toast{
+    width: 400px;
+    padding: 16px 17px;
+    margin-bottom: 10px;
+    background-color: #4cb050;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.568);
+
+}
+.wrong{
+    position: fixed;
+    top:100px;
+    right:20px;
+    transition: all 0.40s;
+    transform: translateX(calc(100% + 20px));
+}
+.wrong.active{
+    transform: translateX(0);
+} 
+.wrong .toast{
+    width: 400px;
+    padding: 16px 17px;
+    margin-bottom: 10px;
+    background-color: #e51c24;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.568);
+
+}
+.colse,.colsese{
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+.column span{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+    color: white;
+}
+.fa-check{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+
+
+
+
+
+
+
